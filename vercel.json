@@ -1,3 +1,16 @@
 {
-    "REWRITES":[{"SOURCE":"/(.*)","DESTINATION":"(/)"}]
-}
+    "version": 2,
+    "builds": [
+      {
+        "src": "index.js",
+        "use": "@vercel/node"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/old-path",
+        "dest": "/new-path"
+      }
+    ]
+  }
+  
